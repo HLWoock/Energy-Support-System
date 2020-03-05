@@ -1,0 +1,32 @@
+server:
+  port: ${PORT:8200}
+  
+info:
+  energy: ok
+  creator: Dipl.-Ing Hermann Woock
+  date: 05.03.2020
+  systems: warp kernel
+  
+
+spring:
+  application:
+    name: energy
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: 
+        - "*" 
+        - hystrix.stream
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always  
+      
+logging:
+  level:
+    root: error
+    de.woock: debug
+    org.springframework.cloud: debug
