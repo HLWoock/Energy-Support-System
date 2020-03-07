@@ -41,3 +41,12 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+bootJar {
+	layered()
+}
+
+bootBuildImage {
+    imageName = "oosemicro/energy-support:${project.version}"
+    verboseLogging = "true"
+}

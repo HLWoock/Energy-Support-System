@@ -1,3 +1,6 @@
+communication: 
+  hello: moin
+  
 server:
   port: ${PORT:8200}
   
@@ -10,7 +13,7 @@ info:
 
 spring:
   application:
-    name: energy
+    name: energy-support
 
 management:
   endpoints:

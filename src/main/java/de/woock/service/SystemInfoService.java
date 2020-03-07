@@ -31,7 +31,7 @@ public class SystemInfoService {
                                           .freeMem(runtime.freeMemory())
                                           .maxMem(runtime.maxMemory())
                                           .totalMem(runtime.totalMemory())
-                                          .version(version)
+                                          .javaVersion(version)
                                           .build();
         return systemInfo;
 	}

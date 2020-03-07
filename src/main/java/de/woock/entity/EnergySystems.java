@@ -16,21 +16,12 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper=false)
 @Builder
 @Entity
-public class SystemInfo extends DomainObject implements Serializable {
+public class EnergySystems extends DomainObject implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	
-	String system;
-	String hostName;
-	String host;
-	String ip;
-	
-	int Processors;
-	long freeMem;
-	long maxMem;
-	long totalMem; 
-	
-	String javaVersion;
-	
-	
+	long live_support;
+	long wappons;
+	long navigation;
+	long warp_drive;
+	long shields;
 }
