@@ -1,6 +1,6 @@
 communication: 
   hello: moin
-  
+
 server:
   port: ${PORT:8200}
   
@@ -13,9 +13,12 @@ info:
 
 spring:
   application:
-    name: energy-support
-
-management:
+    name: energy-support  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    packages:      trusted:      - de.woock.entity
+        java.lang management:
   endpoints:
     enabled-by-default: true
     web:
