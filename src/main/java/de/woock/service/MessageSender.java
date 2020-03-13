@@ -12,11 +12,10 @@ import lombok.extern.log4j.Log4j2;
 @Component
 public class MessageSender {
 	
-	
 	JmsTemplate jmsTemplate;
 
 	public void sendMessage(EnergyMessage message) {
 		log.debug("Sending an energy message.");
-		jmsTemplate.convertAndSend("Energy-Support Message", message);
+		jmsTemplate.convertAndSend("Energy-Support-Message", message);
 	}
 }

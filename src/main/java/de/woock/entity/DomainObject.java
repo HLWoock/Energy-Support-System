@@ -21,7 +21,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Version;
 
 @MappedSuperclass
-public abstract class DomainObject implements Serializable{
+public abstract class DomainObject implements Serializable {
 	/**
 	 * 
 	 */

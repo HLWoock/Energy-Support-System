@@ -18,7 +18,8 @@ spring:
     user: admin
     password: admin
     packages:      trusted:      - de.woock.entity
-        java.lang management:
+      - java.util
+management:
   endpoints:
     enabled-by-default: true
     web:
